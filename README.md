@@ -28,3 +28,7 @@ rule 4   -  Only advertise in the correct areas, look above in the FAQ for a lis
 ## Verify Command
 
 .verify - Gives user the member role and the 4 divider roles
+
+## Auto Member Count Status
+
+.start_status - Starts the bot making its status this: Watching SCC | DM FOR HELP | <membercount> MEMBERS
