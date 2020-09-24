@@ -41,7 +41,7 @@ class allInOne(commands.Cog):
 
     @commands.command(name="welcome", aliases=['wel'])
     async def welcome_cmd(self, ctx):
-        await ctx.send("<:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
+        await ctx.send("<:SCCwave:752725211421605959> Welcome to the server, we hope you have a great time here!")
 
     @commands.command(name="topic")
     async def topic_cmd(self, ctx):
