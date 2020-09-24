@@ -45,7 +45,7 @@ class allInOne(commands.Cog):
     #commands.BucketType.guild for server
     # change the "10" to whatever time
     @commands.command(name="welcome", aliases=['wel'])
-    @commands.cooldown(1, 10, commands.BucketType.user)
+    @commands.cooldown(1, 60, commands.BucketType.user)
     async def welcome_cmd(self, ctx):
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
