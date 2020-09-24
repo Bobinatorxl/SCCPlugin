@@ -11,7 +11,7 @@ class allInOne(commands.Cog):
     @tasks.loop(seconds=10)
     async def loopy(self):
         guild = self.bot.get_guild(717859817032515755)
-        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"SSC | DM FOR HELP | {guild.member_count} MEMBERS"))
+        await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name=f"SCC | DM For Help | {guild.member_count} Members"))
         await asyncio.sleep(5)
 
     @commands.command(name="start_status")
@@ -46,10 +46,6 @@ class allInOne(commands.Cog):
     @commands.command(name="topic")
     async def topic_cmd(self, ctx):
         await ctx.send("Please change the topic/discussion.")
-
-    @commands.command(name="patreon")
-    async def patreon_cmd(self, ctx):
-        await ctx.send("https://www.patreon.com/smallcreatorscommunity")
 
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
