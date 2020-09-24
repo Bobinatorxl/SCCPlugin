@@ -80,7 +80,7 @@ class allInOne(commands.Cog):
             log_channel = ctx.guild.get_channel(758759424235405312)
             embed = discord.Embed(
                 title="Someone just verified!",
-                description=f"**{ctx.author}** just verified!\n\n<SCCpushpin:758760367240380486> Their ID is: {ctx.author.id}\n<SCCpushpin:758760367240380486> Their name is: {ctx.author.name}\n<SCCpushpin:758760367240380486> Their discriminator is: {ctx.author.discriminator}\n\n<SCCpushpin:758760367240380486> The message ID is: {ctx.message.id}\nThe channel ID is: {ctx.message.channel.id}\n\nMessage was sent at {datetime.utcnow()} UTC",
+                description=f"**{ctx.author}** just verified!\n\nTheir ID is: {ctx.author.id}\nTheir name is: {ctx.author.name}\nTheir discriminator is: {ctx.author.discriminator}\n\n <SCCpushpin:758760367240380486> The message ID is: {ctx.message.id}\nThe channel ID is: {ctx.message.channel.id}\n\nMessage was sent at {datetime.utcnow()} UTC",
                 color=self.color,
                 timestamp=ctx.message.created_at
             )
