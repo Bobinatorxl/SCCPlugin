@@ -53,7 +53,7 @@ class allInOne(commands.Cog):
     @commands.command(name="topic")
     async def topic_cmd(self, ctx):
         await ctx.message.delete()
-        await ctx.send("<SCCstaff:752726568979398747> Please change the topic/discussion.")
+        await ctx.send("<752726568979398747:SCCstaff> Please change the topic/discussion.")
 
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
