@@ -58,7 +58,7 @@ class allInOne(commands.Cog):
     @commands.command(name="invite")
     async def topic_cmd(self, ctx):
         await ctx.message.delete()
-        await ctx.send("<SCCpushpin:758760367240380486> The permanent invite for this server is: discord.gg/7bQm3MX \n<SCCpushpin:758760367240380486> The vanity invite is: discord.gg/promotion")
+        await ctx.send("<a:SCCcheck~1:752990150430163074> The permanent invite for this server is: discord.gg/7bQm3MX \n<a:SCCcheck~1:752990150430163074> The vanity invite is: discord.gg/promotion")
 
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
