@@ -25,15 +25,15 @@ class allInOne(commands.Cog):
             await ctx.send("Hey there! This is the rules command, please include the Rule Number and ill let you know what it is!")
         else:
             if int(ruleNum) == 1:
-                await ctx.send("Discord Terms of Service can be found here: https://discord.com/new/terms. Discord needs you to be 13 or above to join this server.")
+                await ctx.send("<SCCstaff:752726568979398747> Discord Terms of Service can be found here: https://discord.com/new/terms. Discord needs you to be 13 or above to join this server.")
             elif int(ruleNum) == 2:
-                await ctx.send("YT Terms of Service can be found here: https://www.youtube.com/static?template=terms, Twitch Terms of Service can be found here: https://www.twitch.tv/p/legal/terms-of-service/")
+                await ctx.send("<SCCstaff:752726568979398747> YT Terms of Service can be found here: https://www.youtube.com/static?template=terms, Twitch Terms of Service can be found here: https://www.twitch.tv/p/legal/terms-of-service/")
             elif int(ruleNum) == 3:
-                await ctx.send("No swearing, gory language, 18+ images or text should be posted here. This is a family friendly server and if you do that you will be punished. Don't have your status, name or profile picture say anything inappropriate. Please have ping-able names, this means at least having a few normal characters where staff can ping you if necessary.")
+                await ctx.send("<SCCstaff:752726568979398747> No swearing, gory language, 18+ images or text should be posted here. This is a family friendly server and if you do that you will be punished. Don't have your status, name or profile picture say anything inappropriate. Please have ping-able names, this means at least having a few normal characters where staff can ping you if necessary.")
             elif int(ruleNum) == 4:
-                await ctx.send("Only advertise in the correct areas, look above in the FAQ for a list of all the advertising channels possible. Only promote in the correct areas. Please do not direct message members with any sort of promotion as that will be a ban.")
+                await ctx.send("<SCCstaff:752726568979398747> Only advertise in the correct areas, look above in the FAQ for a list of all the advertising channels possible. Only promote in the correct areas. Please do not direct message members with any sort of promotion as that will be a ban.")
             elif int(ruleNum) == 5:
-                await ctx.send("All punishment is up to staff and if you think you were falsely punished or want to report a staff <@735200954026033286>. Staff can punish you at any time for any reason and have the final say.")
+                await ctx.send("<SCCstaff:752726568979398747> All punishment is up to staff and if you think you were falsely punished or want to report a staff <@735200954026033286>. Staff can punish you at any time for any reason and have the final say.")
             elif int(ruleNum) == 6:
                 await ctx.send("Do not talk about self harm or suicide here. While it is important this is not the right place, if you or a friend is contemplating suicide call this number: 1-800-273-8255. Please do not post downloadable files or anything that is spyware, malware or any type of ip grabber or hack. The bots advertised in <@720712592812671057> are use at your own risk.")
             elif int(ruleNum) > 6 or int(ruleNum) <= 0:
