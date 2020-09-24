@@ -21,8 +21,6 @@ rule 4   -  Only advertise in the correct areas, look above in the FAQ for a lis
 
 .topic  -  Please change the topic/discussion.
 
-.patreon  -  https://www.patreon.com/smallcreatorscommunity
-
 .boost  -   The booster rewards are, a free growth raid, and access to all 3 premium advertising channels, along with all chat perms!
 
 ## Verify Command
