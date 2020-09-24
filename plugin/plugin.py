@@ -21,6 +21,7 @@ class allInOne(commands.Cog):
 
     @commands.command(name="rule")
     async def rule_command(self, ctx, ruleNum = None):
+        await ctx.message.delete()
         if not ruleNum:
             await ctx.send("Hey there! This is the rules command, please include the Rule Number and ill let you know what it is!")
         else:
@@ -41,14 +42,17 @@ class allInOne(commands.Cog):
 
     @commands.command(name="welcome", aliases=['wel'])
     async def welcome_cmd(self, ctx):
+        await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
 
     @commands.command(name="topic")
     async def topic_cmd(self, ctx):
+        await ctx.message.delete()
         await ctx.send("Please change the topic/discussion.")
 
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
+        await ctx.message.delete()
         await ctx.send("<SCCnitro:744273792527892570> The booster rewards are, a free growth raid, and access to all 3 premium advertising channels, along with all chat perms!")
 
     @commands.command(name="verify")
