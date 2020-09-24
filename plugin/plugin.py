@@ -77,10 +77,10 @@ class allInOne(commands.Cog):
             # Add the role
             await ctx.author.add_roles(role1, role2, role3, role4, role5)
             # Send the log msg
-            log_channel = ctx.guild.get_channel(718214230658252851)
+            log_channel = ctx.guild.get_channel(758759424235405312)
             embed = discord.Embed(
                 title="Someone just verified!",
-                description=f"**{ctx.author}** just verified!\n\nHis ID is: {ctx.author.id}\nHis name is: {ctx.author.name}\nHis discriminator is: {ctx.author.discriminator}\n\nThe message ID is: {ctx.message.id}\nThe channel ID is: {ctx.message.channel.id}\n\nMessage was sent at {datetime.utcnow()} UTC",
+                description=f"**{ctx.author}** just verified!\n\nTheir ID is: {ctx.author.id}\nTheir name is: {ctx.author.name}\nTheir discriminator is: {ctx.author.discriminator}\n\nThe message ID is: {ctx.message.id}\nThe channel ID is: {ctx.message.channel.id}\n\nMessage was sent at {datetime.utcnow()} UTC",
                 color=self.color,
                 timestamp=ctx.message.created_at
             )
