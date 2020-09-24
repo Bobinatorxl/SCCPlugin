@@ -7,6 +7,9 @@ class allInOne(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.color = 0x00FF00
+        self.timer = 10
+        self.timer_server = commands.BucketType.guild
+        self.timer_user = commands.BucketType.user
 
     @tasks.loop(seconds=10)
     async def loopy(self):
@@ -41,6 +44,7 @@ class allInOne(commands.Cog):
                 await ctx.send("This rule has not been found!")
 
     @commands.command(name="welcome", aliases=['wel'])
+    @commands.cooldown(1, self.timer, self.timer_user)
     async def welcome_cmd(self, ctx):
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
@@ -92,6 +96,13 @@ class allInOne(commands.Cog):
                 return
         else:
             return
-
+    
+    @commands.Cog.listener()
+    async def on_command_error(self, ctx, error):
+        if isinstance(error, CommandOnCooldown):
+            await ctx.message.add_reaction("<:SCCtimer:754060791455416321>")
+        else:
+            raise error
+    
 def setup(bot):
     bot.add_cog(allInOne(bot))
