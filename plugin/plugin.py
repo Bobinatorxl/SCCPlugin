@@ -49,7 +49,7 @@ class allInOne(commands.Cog):
 
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
-        await ctx.send("<:SCCnitro:744273792527892570> The booster rewards are, a free growth raid, and access to all 3 premium advertising channels, along with all chat perms!")
+        await ctx.send("<SCCnitro:744273792527892570> The booster rewards are, a free growth raid, and access to all 3 premium advertising channels, along with all chat perms!")
 
     @commands.command(name="verify")
     async def verify_cmd(self, ctx):
