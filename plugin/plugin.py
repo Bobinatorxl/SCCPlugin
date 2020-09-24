@@ -8,8 +8,6 @@ class allInOne(commands.Cog):
         self.bot = bot
         self.color = 0x00FF00
         self.timer = 10
-        self.timer_server = commands.BucketType.guild
-        self.timer_user = commands.BucketType.user
 
     @tasks.loop(seconds=10)
     async def loopy(self):
@@ -42,9 +40,11 @@ class allInOne(commands.Cog):
                 await ctx.send("Do not talk about self harm or suicide here. While it is important this is not the right place, if you or a friend is contemplating suicide call this number: 1-800-273-8255. Please do not post downloadable files or anything that is spyware, malware or any type of ip grabber or hack. The bots advertised in <@720712592812671057> are use at your own risk.")
             elif int(ruleNum) > 6 or int(ruleNum) <= 0:
                 await ctx.send("This rule has not been found!")
-
+    
+    #commands.BucketType.user for user
+    #commands.BucketType.guild for server
     @commands.command(name="welcome", aliases=['wel'])
-    @commands.cooldown(1, self.timer, self.timer_user)
+    @commands.cooldown(1, self.timer, commands.BucketType.user)
     async def welcome_cmd(self, ctx):
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
