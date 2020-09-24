@@ -98,9 +98,9 @@ class allInOne(commands.Cog):
         else:
             return
     
-    @commands.Cog.listener()
-    async def on_command_error(self, ctx, error):
-        if isinstance(error, CommandOnCooldown):
+    @welcome_cmd.error
+    async def wel_cmd_error(self, ctx, error):
+        if isinstance(error, commands.CommandOnCooldown):
             await ctx.message.add_reaction("<:SCCtimer:754060791455416321>")
         else:
             raise error
