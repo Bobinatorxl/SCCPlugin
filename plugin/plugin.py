@@ -55,6 +55,11 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         await ctx.send("Please change the topic/discussion.")
 
+    @commands.command(name="hamood")
+    async def topic_cmd(self, ctx):
+        await ctx.message.delete()
+        await ctx.send("https://www.youtube.com/watch?v=GAn_hL0q-F4")
+
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
         await ctx.message.delete()
