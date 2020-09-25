@@ -55,6 +55,11 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         await ctx.send("Please change the topic/discussion.")
 
+    @commands.command(name="pineapple")
+    async def topic_cmd(self, ctx):
+        await ctx.message.delete()
+        await ctx.send("PineapplePale is amazing and cool.")
+
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
         await ctx.message.delete()
