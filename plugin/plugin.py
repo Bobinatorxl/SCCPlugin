@@ -40,23 +40,6 @@ class allInOne(commands.Cog):
                 await ctx.send("Do not talk about self harm or suicide here. While it is important this is not the right place, if you or a friend is contemplating suicide call this number: 1-800-273-8255. Please do not post downloadable files or anything that is spyware, malware or any type of ip grabber or hack. The bots advertised in <@720712592812671057> are use at your own risk.")
             elif int(ruleNum) > 6 or int(ruleNum) <= 0:
                 await ctx.send("This rule has not been found!")
-
-    @commands.command(name="help")
-    async def rule_command(self, ctx, helpNum = None):
-        await ctx.message.delete()
-        if not helpNum:
-            await ctx.send("Hey there! This is the help command, please include the help number and ill let you know what it is!")
-        else:
-                embed = discord.Embed(
-                title="Custom Commands",
-                description=f"\n`.wel` - Sends a welcome message to welcome a new user.\n`topic` - Tells the chat to change the topic they are talking about.\n`.boost` - Lists the booster perks.\n`.rule 1-6` - Says the rules of the server",
-                color=self.color,
-                timestamp=ctx.message.created_at
-            )
-            if int(helpNum) == 1:
-                await ctx.send(embed=embed)
-            elif int(helpNum) > 1 or int(helpNum) <= 0:
-                await ctx.send("This help number has not been found!")
     
     #commands.BucketType.user for user
     #commands.BucketType.guild for server
