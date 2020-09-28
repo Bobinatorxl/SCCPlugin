@@ -60,16 +60,6 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         await ctx.send("<:SCCnitro:744273792527892570> The perks for boosting once are a free spotlight, all premium ad channels and chat perms! If you boost 2 times you get another spotlight!")
 
-    @commands.command(name="serverinfo")
-    async def boost_cmd(self, ctx):
-        await ctx.message.delete()
-        embed = discord.Embed(
-            title="SCC Server Info",
-            description="Membercount: guild.member_count",
-            color=self.color,
-            timestamp=ctx.message.created_at,
-        )
-        await ctx.send(embed=embed)
 
     @commands.command(name="verify")
     async def verify_cmd(self, ctx):
