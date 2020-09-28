@@ -6,7 +6,7 @@ from datetime import datetime
 class allInOne(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.color = 0x279CF3
+        self.color = 0x7289da
         self.timer = 10
 
     @tasks.loop(seconds=10)
