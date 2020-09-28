@@ -58,7 +58,13 @@ class allInOne(commands.Cog):
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
         await ctx.message.delete()
-        await ctx.send("<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n➢ A free spotlight\n➢ Access to all 3 premium advertising channels\n➢ All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n➢ Everything from before but another free spotlight!")
+        embed = discord.Embed(
+            title="Booster Perks",
+            description=f""<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n➢ A free spotlight\n➢ Access to all 3 premium advertising channels\n➢ All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n➢ Everything from before but another free spotlight!",
+            color=self.color
+            timestamp=ctx.message.created_at
+        )
+        await ctx.send(embed=embed)
 
     @commands.command(name="verify")
     async def verify_cmd(self, ctx):
