@@ -58,7 +58,7 @@ class allInOne(commands.Cog):
     @commands.command(name="boost")
     async def boost_cmd(self, ctx):
         await ctx.message.delete()
-        await ctx.send("<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n<:SCCpushpin:758760367240380486> A free spotlight\n<:SCCpushpin:758760367240380486> Access to all 3 premium advertising channels\n <:SCCpushpin:758760367240380486> All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n<:SCCpushpin:758760367240380486> Everything from before but another free spotlight!")
+        await ctx.send("<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n➢ A free spotlight\n➢ Access to all 3 premium advertising channels\n➢ All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n➢ Everything from before but another free spotlight!")
 
     @commands.command(name="verify")
     async def verify_cmd(self, ctx):
