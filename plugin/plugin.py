@@ -64,7 +64,7 @@ class allInOne(commands.Cog):
     async def boost_cmd(self, ctx):
         await ctx.message.delete()
         embed = discord.Embed(
-            embedVariableName.set_author(name="SCC Server Info", icon_url="https://cdn.discordapp.com/attachments/730934282322706543/750470389662089276/download.gif"),
+            title="SCC Server Info",
             description="Membercount: `member_count`",
             color=self.color,
             timestamp=ctx.message.created_at,
