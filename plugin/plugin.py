@@ -6,7 +6,7 @@ from datetime import datetime
 class allInOne(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.color = 0x00FF00
+        self.color = 4A90E2
         self.timer = 10
 
     @tasks.loop(seconds=10)
@@ -61,7 +61,7 @@ class allInOne(commands.Cog):
         embed = discord.Embed(
             title="Booster Perks",
             description="<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n1. A free spotlight.\n2. Access to all 3 premium advertising channels.\n3. All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n1. Everything from before but another free spotlight!",
-            color=4A90E2,
+            color=self.color,
             timestamp=ctx.message.created_at,
         )
         await ctx.send(embed=embed)
