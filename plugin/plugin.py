@@ -60,7 +60,7 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         embed = discord.Embed(
             title="Booster Perks",
-            description=f"<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n➢ A free spotlight\n➢ Access to all 3 premium advertising channels\n➢ All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n➢ Everything from before but another free spotlight!",
+            description="<:SCCnitro:744273792527892570> If you boost 1 time the rewards are: \n➢ A free spotlight\n➢ Access to all 3 premium advertising channels\n➢ All chat perms!\n<:SCCnitro:744273792527892570> If you boost 2 times you get:\n➢ Everything from before but another free spotlight!",
             color=self.color
             timestamp=ctx.message.created_at
         )
