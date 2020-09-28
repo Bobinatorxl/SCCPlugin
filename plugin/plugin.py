@@ -65,7 +65,7 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         embed = discord.Embed(
             title="SCC Server Info",
-            description="Membercount: `len(ctx.guild.members)`",
+            description="Membercount: len(ctx.guild.members)",
             color=self.color,
             timestamp=ctx.message.created_at,
         )
