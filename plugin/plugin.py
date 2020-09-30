@@ -50,10 +50,15 @@ class allInOne(commands.Cog):
         await ctx.message.delete()
         await ctx.send("<a:SCCwelcome:752725582449737808> Welcome to the server, we hope you have a great time here!")
 
+    @commands.command(name="promote")
+    async def topic_cmd(self, ctx):
+        await ctx.message.delete()
+        await ctx.send("<:SCCstaff:752726568979398747> This is not the channel for promotion, you can do that in the `Sharing` category.")
+
     @commands.command(name="topic")
     async def topic_cmd(self, ctx):
         await ctx.message.delete()
-        await ctx.send("Please change the topic/discussion, any furthur discussion of this may lead to punishments!")
+        await ctx.send("<:SCCstaff:752726568979398747> Please change the topic/discussion, any furthur discussion of this may lead to punishments!")
 
     @commands.command(name="boost")
     async def topic_cmd(self, ctx):
